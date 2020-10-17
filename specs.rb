@@ -22,7 +22,7 @@ wait = Selenium::WebDriver::Wait.new(:timeout => 20) # seconds
 begin
   element = wait.until { driver.find_element(:link_text, UPLOAD).click } # Avoid Link-text and use :css more often for more optimised code
 end
-element = driver.find_element(:id, "file-upload")
+element = driver.find_element(:id, FILEUP) # Duplicate, already defined in the constant variable
 
 begin
   element = wait.until { driver.find_element(:id, FILEUP) }
