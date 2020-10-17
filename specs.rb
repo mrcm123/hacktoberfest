@@ -15,12 +15,13 @@ SUBMIT = "file-submit"
 
 driver.manage.window.maximize
 
-sleep 5 # We can remove this implicit sleep and add an explicit sleep here
-
 driver.get LINK
 
-element = driver.find_element(:link_text, UPLOAD).click
-
+# Removing sleep and optimising the code by adding a explicit wait
+wait = Selenium::WebDriver::Wait.new(:timeout => 20) # seconds
+begin
+  element = wait.until { driver.find_element(:link_text, UPLOAD).click }
+end
 element = driver.find_element(:id, "file-upload")
 
 wait = Selenium::WebDriver::Wait.new(:timeout => 20) # seconds
