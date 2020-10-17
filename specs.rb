@@ -24,13 +24,12 @@ begin
 end
 element = driver.find_element(:id, "file-upload")
 
-wait = Selenium::WebDriver::Wait.new(:timeout => 20) # seconds
 begin
   element = wait.until { driver.find_element(:id, FILEUP) }
 end
 element.send_keys(FILE)
 
-puts "Uploading..."
+puts "Uploading your file..."
 
 element = driver.find_element(:id, SUBMIT)
 element.click
