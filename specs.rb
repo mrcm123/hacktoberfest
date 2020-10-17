@@ -20,7 +20,7 @@ driver.get LINK
 # Removing sleep and optimising the code by adding a explicit wait
 wait = Selenium::WebDriver::Wait.new(:timeout => 20) # seconds
 begin
-  element = wait.until { driver.find_element(:link_text, UPLOAD).click }
+  element = wait.until { driver.find_element(:link_text, UPLOAD).click } # Avoid Link-text and use :css more often for more optimised code
 end
 element = driver.find_element(:id, "file-upload")
 
