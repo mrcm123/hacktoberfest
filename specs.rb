@@ -31,6 +31,9 @@ element.send_keys(FILE)
 
 puts "Uploading your file..."
 
+# Added some wait time here
+sleep(5)
+
 element = driver.find_element(:id, SUBMIT)
 element.click
 sleep(5)
