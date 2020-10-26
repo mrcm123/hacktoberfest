@@ -5,9 +5,10 @@
 require 'rubygems'
 require 'selenium-webdriver'
 
-# Modify your code accordingly if you want to run Automation for chrome or firefox use relevant drivers
+# Modify your code accordingly if you want to run Automation for chrome firefox or safari use relevant drivers
 driver = Selenium::WebDriver.for :chrome
 driverFirefox = Selenium::WebDriver.for :firefox # Added driver for firefox
+driverSafari = Selenium::WebDriver.for :safari # Added driver for safari
 
 LINK = "https://the-internet.herokuapp.com/"
 UPLOAD = "File Upload"
