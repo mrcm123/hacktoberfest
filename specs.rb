@@ -29,7 +29,8 @@ begin
 end
 element.send_keys(FILE)
 
-puts "Uploading your file..."
+# Included File Path in log
+puts "Uploading your file from file path #{FILE}..."
 
 # Added some wait time here
 sleep(5)
