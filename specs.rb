@@ -43,7 +43,7 @@ sleep(5)
 
 element = driver.find_element(:id, SUBMIT)
 element.click
-sleep(5)
+sleep(4)
 
 puts "Page title is #{driver.title}"
 
