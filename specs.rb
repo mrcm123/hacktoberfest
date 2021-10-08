@@ -40,6 +40,7 @@ puts "Uploading your file from file path #{FILE}..."
 
 # Added some wait time here
 sleep(5)
+# Instead of sleep, we can add an explicit wait here
 
 element = driver.find_element(:id, SUBMIT)
 element.click
