@@ -2,7 +2,6 @@
 # People can contribute the more enhanced and optimised level in the same code
 # We will start with a very basic level of code
 
-require 'rubygems'
 require 'selenium-webdriver'
 
 # Modify your code accordingly if you want to run Automation for chrome firefox or safari use relevant drivers
